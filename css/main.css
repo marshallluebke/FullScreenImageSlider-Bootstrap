@@ -1,0 +1,108 @@
+/* Sidebar */
+#sidebar-wrapper {
+  z-index: 1;
+  position: absolute;
+  width: 0;
+  height: 800px;
+  overflow-y: hidden;
+  background: #fff;
+  transition: all 0.5s ease-out;
+}
+
+.topbar {
+  padding: 20px !important;
+}
+
+.padding-left {
+  padding-left: 280px !important;
+  transition: all 0.5s ease-out;
+}
+
+/* Main Content Area */
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+}
+
+/*  Change the width of the sidebar to display it  */
+#wrapper.menuDisplayed #sidebar-wrapper {
+  width: 265px;
+}
+
+#wrapper.menuDisplayed #page-content-wrapper {
+  padding-left: 250px;
+}
+
+/* Sidebar styling*/
+.sidebar-nav {
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #202020;
+}
+
+.sidebar-nav li a:hover {
+  background: #ddd;
+  transition: all 0.5s ease-out;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  vertical-align: baseline !important;
+  background: transparent !important;
+}
+
+.carousel,
+.item,
+.active {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+header {
+  height: 800px !important;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+.fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+@media (max-width: 480px) {
+  .slideshow {
+    visibility: hidden;
+    height: 200px;
+  }
+  #sidebar-wrapper {
+    height: 200px;
+  }
+  #wrapper.menuDisplayed #sidebar-wrapper {
+    width: 480px;
+    height: 200px;
+  }
+}
+
+.slideshow {
+  padding: 0px !important;
+}

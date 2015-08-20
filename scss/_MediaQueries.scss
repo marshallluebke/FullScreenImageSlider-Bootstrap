@@ -1,0 +1,14 @@
+@media (max-width: 480px) {
+	.slideshow{
+		visibility:hidden;
+		height:200px;
+	}
+
+	#sidebar-wrapper{
+		height:200px;
+	}
+	#wrapper.menuDisplayed #sidebar-wrapper{
+		width:480px;
+		height:200px;
+	}
+}
